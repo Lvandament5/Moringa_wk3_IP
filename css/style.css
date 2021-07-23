@@ -24,6 +24,7 @@
 	margin-bottom: 1.375rem;
 	color: #ffffff;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .header .p-large {
@@ -104,5 +105,18 @@ img {
 }
   
 
+/*Contact form*/
+input {
+    background-color:transparent !important;
+    border-color: white;  
+ }
+textarea {
+    background-color:transparent !important;
+    border-color: white;
+    color:white;
+ }
+::placeholder {
+   color:white;
+  }
 
 
