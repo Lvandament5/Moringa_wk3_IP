@@ -1,0 +1,39 @@
+.header {
+	position: relative;
+	overflow: hidden;
+	background: url(/assets/backgrounds/h_img.jpg);
+    min-height: 100%;
+    background-position: center top; 
+    background-repeat: no-repeat; 
+    background: #1b1e7b;
+    background-size: cover;
+}
+
+.header .text-container {
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.h1-large {
+	margin-bottom: 1.375rem;
+	color: #ffffff;
+    text-transform: uppercase;
+}
+
+.header .p-large {
+	margin-bottom: 2rem;
+	color: #ffffff;
+    text-transform: uppercase;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.centericon {
+    padding-top: 100px;
+   
+    text-align: center;
+  }
