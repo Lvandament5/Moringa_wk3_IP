@@ -8,6 +8,9 @@
     background: #1b1e7b;
     background-size: cover;
 }
+.logo-img {
+    width: 70px;
+  }
 
 .header .text-container {
 	margin-bottom: 4rem;
@@ -97,17 +100,9 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 32px;
-   =
-    
+    padding-bottom: 2em;
 }
   
-.Grid-item {
-    background: #C5CAE9;
-    
-}
 
-/* .gridport {
-    grid-template-areas:
-      '1 2 3 4'
-      '5 6 7 8';
-  } */
+
+
