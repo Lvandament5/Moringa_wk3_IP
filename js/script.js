@@ -10,11 +10,6 @@ $(function () {
         event.preventDefault();
     });
 });
-$(document).ready(function(){
-    $(":button").click(function(){
-     alert("you clicked the button");   
-    })
-});
 
 
 $(document).ready(function () {
@@ -28,37 +23,49 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function(){
-    $("#dtog").click(function(){
+$(document).ready(function () {
+    $("#dtog").click(function () {
         $('#dtog').toggle('5000');
         $('#dtogtext').toggle('5000');
     });
-    $("#dtogtext").click(function(){
+    $("#dtogtext").click(function () {
         $('#dtog').toggle('5000');
         $('#dtogtext').toggle('5000');
     });
-        
+
 });
 
-$(document).ready(function(){
-    $("#pmtog").click(function(){
+$(document).ready(function () {
+    $("#pmtog").click(function () {
         $('#pmtog').toggle('5000');
         $('#pmtogtext').toggle('5000');
     });
-    $("#pmtogtext").click(function(){
+    $("#pmtogtext").click(function () {
         $('#pmtog').toggle('5000');
         $('#pmtogtext').toggle('5000');
     });
-        
+
 });
-// $("form").submit(function (e) {
-//     $.post("https://gmail.us6.list-manage.com/subscribe/post-json?u=9a1d9c90e449e2fc357dd6095&amp;id=5746e21a06", {
-//         FNAME: $("#mce-FNAME").val()
-//         EMAIL: $("#mce-EMAIL").val()
-//        MMERGE2: $("#mce-MMERGE2").val()
-//     })
-//         .success(function (FNAME) {
-//             alert("Thank you for reaching out" + FNAME)
-//         });
-//     e.preventDefault()
-// });
+$("#contactform").submit(function (e) {
+    e.preventDefault()
+    $("#contactform").ajaxChimp({
+
+        url="https://gmail.us6.list-manage.com/subscribe/post-json?u=9a1d9c90e449e2fc357dd6095&amp;id=5746e21a06"
+    })
+    // $.post("https://gmail.us6.list-manage.com/subscribe/post-json?u=9a1d9c90e449e2fc357dd6095&amp;id=5746e21a06", {
+    //     FNAME: $("#mce-FNAME").val();
+    //     EMAIL: $("#mce-EMAIL").val();
+    //    MMERGE2: $("#mce-MMERGE2").val();
+    // })
+    //     .success(function (FNAME) {
+    //         alert("Thank you for reaching out" + FNAME)
+    //     });
+    // e.preventDefault()
+
+});
+
+$(document).ready(function () {
+    function runpopup() {
+        swal("Hello world!");
+    };
+});

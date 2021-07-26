@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delani studio</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://raw.githubusercontent.com/scdoshi/jquery-ajaxchimp/master/jquery.ajaxchimp.js"></script>
     <!-- Favicon  -->
     <link rel="icon" href="assets/logo/">
     <!-- Latest compiled and minified CSS -->
@@ -129,29 +131,28 @@
         <!-- <div class="container"> -->
         <div class="centered">
             <h1 class="h1-large">Contact us</h1>
-            <form>
-                <!-- action="https://gmail.us6.list-manage.com/subscribe/post-json?u=9a1d9c90e449e2fc357dd6095&amp;id=5746e21a06"
-                method="post" id="subscribe-form" name="subscribe-form" class="validate" target="_blank" novalidate> -->
-                <div class="form-row p-white">
-                    <div class="form-group col-auto">
-                        <input type="text" class="form-control-input" name="FNAME" id="mce-FNAME" placeholder="Name..."
-                            required>
+            <form id="contactform" action="https://gmail.us6.list-manage.com/subscribe/post?u=9a1d9c90e449e2fc357dd6095&amp;id=5746e21a06" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div class="form-row p-white">
+                        <div class="form-group col-auto">
+                            <input type="text" class="form-control-input" name="FNAME" id="mce-FNAME"
+                                placeholder="Name..." required>
+                        </div>
+                        <div class="form-group col-auto">
+                            <input type="email" class="form-control-input" name="EMAIL" id="mce-EMAIL"
+                                placeholder="Email..." required>
+                        </div>
                     </div>
-                    <div class="form-group col-auto">
-                        <input type="email" class="form-control-input" name="EMAIL" id="mce-EMAIL"
-                            placeholder="Email..." required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-lg-12">
-                        <textarea class="form-control" name="MMERGE2" class="" id="mce-MMERGE2" rows="10"
-                            placeholder="Your message here..." required></textarea>
-                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-lg-12">
+                            <textarea class="form-control" name="MMERGE2" class="" id="mce-MMERGE2" rows="10"
+                                placeholder="Your message here..." required></textarea>
+                        </div>
 
-                    <div class="form-group">
-                        <button type="submit" class="form-control-submit-button">Submit Message</button>
+                        <div class="form-group">
+                            <button type="submit" class="form-control-submit-button" onclick="runpopup()">Submit Message</button>
+                        </div>
+                        
                     </div>
-                </div>
             </form>
         </div>
 
@@ -176,26 +177,11 @@
     <script type="text/javascript">
         console.log(loaded)
     </script>
-    <script>
-        $(document).ready(function () {
-            $(":button").click(function () {
-                alert("you clicked the button")
-            })
-        });
-    </script>
-    <script>
-        // $(document).ready(function () {
-        //     $("#tog").click(function () {
-        //         $('#tog').toggle('5000');
-        //         $('#togtext').toggle('5000');
-        //     });
-        //     $("#togtext").click(function () {
-        //         $('#tog').toggle('5000');
-        //         $('#togtext').toggle('5000');
-        //     });
-        // });
+<script>
 
-    </script>
+</script>
+
+
 </body>
 
 </html>
