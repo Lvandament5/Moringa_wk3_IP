@@ -155,3 +155,13 @@ textarea::placeholder {
   color: white;
   /* text-align: center;
 }
+/*footer*/
+footer {
+    height: 60px;  /* footer height */
+    padding-top: 20px;
+    display: block;
+    margin-top: 20px; /* space between content and footer */
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
