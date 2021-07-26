@@ -11,14 +11,6 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <link href="css/style.css" rel="stylesheet">
 
@@ -82,21 +74,47 @@
     </div>
     <div>
         <h3 class="uppercase basic2">What we do</h3>
-        <div class="grid-container">
-            <div>
-                <img class="icon-img" src="assets/services_icons/design_icon.png">
-                <h6 class="uppercase">Design</h6>
-            </div>
-            <div>
-                <img class="icon-img" src="assets/services_icons/dev_icon.png">
-                <h6 class="uppercase">Development</h6>
-            </div>
-            <div>
-                <img class="icon-img" src="assets/services_icons/product_icon.png">
-                <h6 class="uppercase">Product management</h6>
-            </div>
-
+        <img class="icon-img" id="tog" src="assets/services_icons/dev_icon.png">
+        <p id="togtext" style="display:none;">Our design practice offers a full range of services including brand
+            strategy,
+            interaction and visual design and user experience testing.
+            Throughout your project, our designers create and implement visual design and workflows, solicit
+            user feedback and work with you to make sure what gets built is what is needed.</p>
+    </div>
+    <div>
+        <button type="button">Useless Button</button>
+        <div>
+            <img class="icon-img"  src="assets/services_icons/design_icon.png">
+            <h6 class="uppercase">Design</h6>
+            <p  style="display:none;">Our design practice offers a full range of services including brand
+                strategy,
+                interaction and visual design and user experience testing.
+                Throughout your project, our designers create and implement visual design and workflows, solicit
+                user feedback and work with you to make sure what gets built is what is needed.</p>
         </div>
+    </div>
+    <div class="grid-container">
+        <div>
+            <img class="icon-img" id="dtog"src="assets/services_icons/design_icon.png">
+            <h6 class="uppercase">Design</h6>
+            <p id="dtogtext" style="display:none;">Our design practice offers a full range of services including brand
+                strategy,
+                interaction and visual design and user experience testing.
+                Throughout your project, our designers create and implement visual design and workflows, solicit
+                user feedback and work with you to make sure what gets built is what is needed.</p>
+        </div>
+
+
+        <div>
+            <img class="icon-img" src="assets/services_icons/dev_icon.png">
+            <h6 class="uppercase">Development</h6>
+        </div>
+        <div>
+            <img class="icon-img" src="assets/services_icons/product_icon.png">
+            <h6 class="uppercase">Product management</h6>
+        </div>
+
+    </div>
     </div>
     <div>
         <h3 class="uppercase basic2">Portfolio</h3>
@@ -149,8 +167,44 @@
     </div>
     </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        var loaded = false;
+        console.log(loaded)
+    </script>
+
+    <script type="text/javascript" src="js/script.js" onload="loaded=true;"></script>
+    <script type="text/javascript">
+        console.log(loaded)
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(":button").click(function () {
+                alert("you clicked the button")
+            })
+        });
+    </script>
+    <script>
+        // $(document).ready(function () {
+        //     $("#tog").click(function () {
+        //         $('#tog').toggle('5000');
+        //         $('#togtext').toggle('5000');
+        //     });
+        //     $("#togtext").click(function () {
+        //         $('#tog').toggle('5000');
+        //         $('#togtext').toggle('5000');
+        //     });
+        // });
+
+    </script>
 </body>
 
 </html>
