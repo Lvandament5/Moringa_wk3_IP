@@ -156,3 +156,24 @@ function myleave8() {
         $("#hover8").empty()
     });
 };
+$(document).ready(function ($) {
+    $('#contactform').submit(function (e) {
+        console.log("Ajax")
+        $.ajax({
+            url: "https://gmail.us6.list-manage.com/subscribe/post-json?u=9a1d9c90e449e2fc357dd6095&amp;id=5746e21a06",
+            type: 'GET',
+            data: $('#contactform').serialize(),
+            dataType: 'jsonp',
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                if (data['result'] != "success") {
+                    //ERROR
+                    console.log(data['Please try again later']);
+                } else {
+                    //SUCCESS - Do what you like here
+                    window.location = 'https://lvandament5.github.io/Moringa_wk3_IP/';
+                }
+            }
+        });
+    });
+});

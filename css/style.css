@@ -119,22 +119,22 @@ img {
   
 
 /*Contact form*/
+textarea { height: auto; }
 input {
     background-color:transparent !important;
     border-color: white;  
  }
+
 textarea {
-    background-color:transparent !important;
-    border-color: white;
-    color:white;
+  background-color:transparent !important;
+  border-color: white; 
  }
-::placeholder {
+textarea::placeholder {
+  color: #fff;  
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
    color:white;
   }
-
-
-
-
 .icon-img2 {
   width: 30px;
 }
